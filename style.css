@@ -130,3 +130,22 @@ input[type="email"]:invalid {
 #your--mail {
   font-weight: 700;
 }
+
+@media screen and (max-width: 375px) {
+  .form--container {
+    display: flex;
+    width: 350px;
+    margin: 0 0 20px 0;
+  }
+  .form--wrapper {
+    width: 20px;
+    display: flex;
+  }
+  .form--wrapper img {
+    display: none;
+  }
+  .success--wrapper {
+    width: 75%;
+    line-height: 1rems;
+  }
+}
