@@ -17,22 +17,38 @@
     </title>
   </head>
   <body>
-    <div class="form--container">
+    <div class="form--container" id="sign-up">
       <div class="form--wrapper">
-        <form action="">
+        <form class="signup-form" action="">
           <!-- Sign-up form start -->
-          <h2>Stay updated!</h2>
+          <h2 id="form-message">Stay updated!</h2>
           <p>Join 60,000+ product managers receiving monthly updates on:</p>
           <ul>
             <li>Product discovery and building what matters</li>
             <li>Measuring to ensure updates are a success</li>
             <li>And much more!</li>
           </ul>
-          <label for="email">Email address</label>
-          <div class="email--submit">
-            <input type="email" name="" id="" placeholder="email@company.com" />
+          <div class="email--message">
+            <label for="email">Email address</label>
+            <label for="" id="invalid-message" class="invalid-message"
+              >Valid email required</label
+            >
+          </div>
 
-            <input type="submit" value="Subscribe to monthly newsletter" />
+          <div class="email--submit">
+            <input
+              type="email"
+              name="email"
+              id="email-input"
+              placeholder="email@company.com"
+            />
+
+            <input
+              class="btn"
+              type="submit"
+              id="email-submit"
+              value="Subscribe to monthly newsletter"
+            />
           </div>
           <!-- Sign-up form end -->
         </form>
@@ -40,18 +56,25 @@
       </div>
     </div>
     <!-- Success message start -->
-
-    Thanks for subscribing! A confirmation email has been sent to
-    p176@company.com. Please open it and click the button inside to confirm
-    your subscription. Dismiss message
-
-    <!-- Success message end -->
-
-    <div class="attribution">
+    <div class="success--wrapper" id="success-form">
+      <div class="success">
+        <img src="./assets/images/icon-success.svg" alt="" />
+        <h2>Thanks for subscribing!</h2>
+        <p>
+          A confirmation email has been sent to
+          <span id="your--mail">p176@company.com.</span> Please open it and
+          click the button inside to confirm your subscription.
+        </p>
+        <button class="btn">Dismiss message</button>
+        <!-- Success message end -->
+      </div>
+    </div>
+    <footer class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
       >. Coded by <a href="https://github.com/preston176">Preston M</a>.
-    </div>
+    </footer>
+    <script src="./index.js"></script>
   </body>
 </html>

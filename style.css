@@ -12,9 +12,14 @@
 }
 .attribution {
   font-size: 16px;
+  margin-top: 2px;
+  padding-top: 2rem;
+  background-color: hsl(0, 0%, 100%);
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
   text-align: center;
-  background-color: hsl(0, 0%, 100%)
-  height: fit-content;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
@@ -48,13 +53,29 @@ body {
 label[for="email"] {
   font-family: Roboto-Bold;
 }
+.email--message {
+  display: flex;
+  justify-content: space-between;
+  font-size: small;
+}
 
 input[type="email"] {
   padding: 10px;
   margin-bottom: 20px;
   border: 1px solid rgb(167, 165, 165);
+  transition: border 1.5s ease-in-out;
+  outline: none;
 }
-input[type="submit"] {
+input[type="email"]:invalid {
+  border: 1px solid hsl(4, 100%, 67%);
+  background-color: hsl(4, 50%, 44%);
+  color: hsl(0, 0%, 100%);
+  transition: background-color 0.15s ease-in-out;
+  outline: none;
+  border: none;
+  opacity: 0.8;
+}
+.btn {
   text-align: center;
   padding: 20px;
   border: none;
@@ -64,7 +85,7 @@ input[type="submit"] {
   border-radius: 0.5rem;
 }
 
-input[type="submit"]:hover {
+.btn:hover {
   cursor: pointer;
   background-color: hsl(4, 100%, 67%);
   transform: scale(1.02);
@@ -75,7 +96,37 @@ input[type="submit"]:hover {
   flex-direction: column;
 }
 
+.invalid-message {
+  display: none;
+  color: hsl(4, 100%, 67%);
+}
+
 .form--wrapper {
   padding: 20px;
   display: flex;
+}
+.success {
+  display: flex;
+  flex-direction: column;
+}
+.success--wrapper {
+  display: flex;
+  margin: 2% auto 0 auto;
+  width: 50%;
+  line-height: 2.5rem;
+  border-radius: 2rem;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.success img {
+  width: min-content;
+}
+
+#success-form {
+  display: none;
+}
+
+#your--mail {
+  font-weight: 700;
 }
