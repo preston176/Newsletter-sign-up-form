@@ -13,6 +13,8 @@
 .attribution {
   font-size: 11px;
   text-align: center;
+  background-color: #fff;
+  height: 5vh;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
@@ -64,7 +66,7 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
   cursor: pointer;
-  background-color: #222;
+  background-color: #ff2020;
   transform: scale(1.02);
   transition: all 0.15 ease-in-out;
 }
