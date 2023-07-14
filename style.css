@@ -1,0 +1,79 @@
+@font-face {
+  font-family: Roboto-Bold;
+  src: url(./assets/fonts/Roboto-Bold.ttf);
+}
+@font-face {
+  font-family: Roboto-Regular;
+  src: url(./assets/fonts/Roboto-Regular.ttf);
+}
+
+* {
+  font-family: Roboto-Regular;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.form--container {
+  display: flex;
+  /* border: 1px solid black; */
+  margin: 2% auto 0 auto;
+  width: min-content;
+  border-radius: 2rem;
+  background-color: #fff;
+}
+
+.form--container form {
+  padding: 2rem;
+  font-size: large;
+  line-height: 1.75rem;
+}
+
+body {
+  background-color: rgb(53, 52, 54);
+}
+
+.form--container form li::marker {
+  background-color: #000;
+}
+.form--container form ul > li {
+  list-style: url(./assets/images/icon-list.svg);
+}
+label[for="email"] {
+  font-family: Roboto-Bold;
+}
+
+input[type="email"] {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid rgb(167, 165, 165);
+}
+input[type="submit"] {
+  text-align: center;
+  padding: 20px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background-color: rgb(27, 4, 27);
+  border-radius: 0.5rem;
+}
+
+input[type="submit"]:hover {
+  cursor: pointer;
+  background-color: #222;
+  transform: scale(1.02);
+  transition: all 0.15 ease-in-out;
+}
+.email--submit {
+  display: flex;
+  flex-direction: column;
+}
+
+.form--wrapper {
+  padding: 20px;
+  display: flex;
+}
